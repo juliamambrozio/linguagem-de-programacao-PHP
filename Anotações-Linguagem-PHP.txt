@@ -1,0 +1,149 @@
+APP HELP DESK: recebendo valores de campos em outra página, (name (para
+registrar),GET/POST),autenticação de usuário, header, isset, location, 
+colocar índice na URL e recuperar para mostrar erro, session, aviso se caso 
+tentar acessar sem logar,include (incorporar scripts), logout (unset e destroy),
+fopen(), fwrite() e fclose() (criando arquivos), colocar conteúdos um em 
+cada linha, percorrendo um arquivo até o final (feof) e retornando, exibindo 
+chamados de forma dinâmica, admin e usuário, deixando mais seguro (colocando 
+arquivos de risco fora da pasta pública do http (htdocs) e incluindo no código 
+com include once)
+
+
+
+
+Linguagem de Programação PHP
+
+1- Embutindo blocos de PHP
+2- Echo(exibição) e Print(função), comentários (não dá para ver pelo 
+inspecionar igual o HTML)
+3- Variáveis
+4- Concatenação
+5- Var constantes (valores não podem ser mudados, garantindo segurança)
+6- If e else (definem o controle que o sistema irá tomar, comparação)
+7- Operadores Lógicos (and ou &&, or ou ||, xor, !), juntando operações
+8- Praticando mais If e Else (compras), condições encadeadas
+9- Operador ternário (tomada de decisões, mais limitado, <condição> ? 
+true : false)
+10- Atividade de verificação de doação de sangue
+11- Switch Case
+12- Casting (mudar o tipo da var)
+13- Operadores Aritméticos
+14- Atribuição de Operadores Aritméticos
+15- Pré-incremento, pós-incremento, pré-decremento, pós-decremento
+16- Funções
+17- Exercício imposto de renda
+18- Funções nativas para manipulação de strings (tudo minúsculo, maiúsculo, 
+contagem de caracter, substituição de caracter)
+19- Funções nativas para tarefas matemáticas (arredondamento de número, 
+número aleatório)
+20- Funções nativas para manipular datas (pegando data atual do Brasil, 
+diferença de segundos)
+21-Array Básico (englobar tudo em uma variável), debug e colocando elementos 
+no array
+- Array multidimensional (colocando arrays dentro dos índices)
+- Array pesquisa (in_array() [para saber se existe] e array_search()
+- Funções nativas para manipular Arrays (colocar em ordem alfabética, 
+verificação de um array, exibir chaves, quantidade de elementos, mesclar arrays,
+quebrando string e colocando para cada índice, juntado elementos em uma string)
+[pesquisa o índice]), pesquisa em Array Multidimensional
+22- Diferença entre null (exclusivamente null), empty (pode ser vazio e null
+/false) e false 
+23- Estruturas de repetições (while, do while, for, foreach (arrays e objetos))
+24- Manipulando arrays com estrutura de repetição (exibição de seus conteúdos)
+25- Foreach (percorrendo arrays básicos e multidimensionais)
+26- Exercício MegaSena
+
+
+EXTRA: 
+Cliente > Internet > Servidor
+http: pega dados do cliente e manda pro servidor, servidor exibe os 
+dados pelo Browser caso exista
+LocalHost: conexão do servidor com a Internet (http)
+
+Tag de impressão: <?= ?> (imprime na tela)
+Tag padrão: <?php ?>
+
+cliente > requisição > internet > servidor (http, Apache)
+servidor (http, Apache) > resposta > internet > cliente
+Página estáticas: HTML (hardcode), só manda o arquivo para quem fez a requisição
+Dinâmicas: PHP, manda pro servidor
+
+Blocos PHP são lidos e devolvidos para o Apache em formato HTML
+
+COMPARAÇÃO
+
+== (iguais)
+=== (idênticos)
+!= (diferente)
+<> (diferente)
+!== (não idênticos)
+< (menor)
+> (maior)
+<= (menor igual)
+>= (maior igual)
+
+OPERADORES LÓGICOS
+AND ou && (E)
+OR ou || (OU)
+XOR (Apenas se uma das expressões é verdadeira e a outra falsa)
+! (Inverte)
+
+SWITCH
+- Compara idênticos
+- Mesma proposta do if e else
+
+OPERADORES ARITMÉTICOS
++ (Adição)
+- (Subtração)
+* (Multiplicação)
+/ (Divisão)
+% (Módulo, resto da divisão) 
+
+FUNÇÕES
+- Sub programasl, motivos específicos
+- void (só processa, expecífico), retorno (retorna o valor, quando pode ser usado em 
+vários contextos)
+
+FUNÇÕES NATIVAS PARA MANIPULAR STRINGS
+
+strtolower($texto) -> transforma todos os caracteres em minúsculos
+strtoupper($texto) -> transforma todos os caracteres em maiúsculos
+ucfirst($texto) -> transforma o primeiro caractere em maiúsculo
+strlen($texto) -> conta a quantidade de caracteres de uma string
+str_replace(<procura por>, <substitui por>, $texto) -> substitui 
+uma cadeia de caracteres
+substr($texto, <posicao inicial>, <qntd de caracteres>) -> retorna 
+parte de uma string. recorta
+
+FUNÇÕES NATIVAS PARA MANIPULAR TAREFAS MATEMÁTICAS
+ceil($num) -> arredonda para cima
+floor($num) -> arredonda para baixo
+round($num) -> arredonda o valor com base nas casas decimais
+rand() -> gera um inteiro aleatório
+sqrt($num) -> retorna a raiz quadrada
+
+FUNÇÕES NATIVAS PARA MANIPULAR DATAS
+date(formato) -> recuperar data atual
+date_default_timezone_get(timezone) -> recuperar o timezone 
+default da aplicação
+date_default_timezone_set(timezone)  -> atualizar o timezone 
+default da aplicação
+strtotime(data)  -> transformar datas textuais em segundos
+
+LOOPS
+- repetir comando ou grupo de códigos até acabar (exemplo, exibir dados do bd)
+- Do While: a condição é lida no final da primeira interação
+- While: a primeira coisa que é feita é a verificação da condição
+
+GET/POST: são arrays que pegam as informações enviadas e transformam em 
+índices com seus valores
+
+INCORPORAM SCRIPTS DENTRO DE OUTROS
+include(warning,ínclui mais de uma vez), include_once 
+(warning, só ínclui uma vez), require (fatal_error,ínclui mais de uma vez) e 
+require_once(fatal_error,só ínclui uma vez)
+
+DESTRUINDO VARIÁVEIS DE SESSÃO
+unset(): remove só um índice se caso ele existir (Não dá um erro)
+session_destroy(): destrói a variável de sessão
+
