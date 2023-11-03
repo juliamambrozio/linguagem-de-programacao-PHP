@@ -9,8 +9,6 @@ arquivos de risco fora da pasta pública do http (htdocs) e incluindo no código
 com include once)
 
 
-
-
 Linguagem de Programação PHP
 
 1- Embutindo blocos de PHP
@@ -52,6 +50,15 @@ quebrando string e colocando para cada índice, juntado elementos em uma string)
 24- Manipulando arrays com estrutura de repetição (exibição de seus conteúdos)
 25- Foreach (percorrendo arrays básicos e multidimensionais)
 26- Exercício MegaSena
+
+NOVAS FEATURES PHP 8: 
+
+Argumentos nomeados: não precisa seguir a ordem na hora de dar os valores, 
+precisa apenas colocar o nome da variável na frente (teste: "teste")
+Propriedades de construtor: criando atributos no construtor e colocando 
+argumentos nomeados
+MATCH: comparação por idêntidade (mesmo estilo do switch case), operadores 
+lógicos
 
 
 EXTRA: 
